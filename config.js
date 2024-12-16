@@ -11,7 +11,7 @@ const LOGS = process.env.LOGS || "false";
 const API = "https://api-aswin-sparky.koyeb.app";
 const ALIVE = process.env.ALIVE || "I am Alive";
 const HANDLERS = process.env.HANDLERS || ".";
-const SESSION_ID = process.env.SESSION_ID ||. ":9d0e062aae0a0330dc0ef157b14e2cc2";
+const SESSION_ID = process.env.SESSION_ID ||. "A-S-W-I-N-S-P-A-R-K-Y:fc703ca1a9c120b7b3d32ad4581a0fe2";
 const SUDO = process.env.SUDO || '917012984396';
 const AUTO_STATUS_VIEW = process.env.AUTO_STATUS_VIEW || "true";
 const ALWAYS_ONLINE = process.env.ALWAYS_ONLINE || "false";
@@ -51,7 +51,76 @@ module.exports = {
   STICKER_DATA,
   BOT_INFO,
   AUDIO_DATA,
+  AUTO_Smodule.exports = {
+  API,
+  ALIVE,
+  LOGS,
+  HANDLERS,
+  SUDO,
+  WORK_TYPE,
+  SESSION_ID,
+  STICKER_DATA,
+  BOT_INFO,module.exports = {
+  API,
+  ALIVE,
+  LOGS,
+  HANDLERS,
+  SUDO,
+  WORK_TYPE,
+  SESSION_ID,
+  STICKER_DATA,
+  BOT_INFO,
+  AUDIO_DATA,
+  AUTO_Smodule.exports = {
+  API,
+  ALIVE,
+  LOGS,
+  HANDLERS,
+  SUDO,
+  WORK_TYPE,
+  SESSION_ID,
+  STICKER_DATA,
+  BOT_INFO,
+  AUDIO_DATA,
   AUTO_STATUS_VIEW,
+  ALWAYS_ONLINE,
+  PM_BLOCK,
+  PMB,
+  READ_MESSAGES,
+  DISABLE_PM,
+  URL,
+  AUDIO_DATA,
+  AUTO_STATUS_VIEW,
+  ALWAYS_ONLINE,
+  PM_BLOCK,
+  PMB,
+  READ_MESSAGES,
+  DISABLE_PM,
+  URL,
+  VERSION:"3.2.0",
+  HEROKU_API_KEY,
+  HEROKU_APP_NAME,
+  KOYEB_API_KEY,
+  DATABASE_URL: DATABASE_URL,
+  DATABASE:
+    DATABASE_URL === "./lib/database.db"
+      ? new Sequelize({
+          dialect: "sqlite",
+          storage: DATABASE_URL,
+          logging: false,
+        })
+      : new Sequelize(DATABASE_URL, {
+          dialect: "postgres",
+          ssl: true,
+          protocol: "postgres",
+          dialectOptions: {
+            native: true,
+            ssl: { require: true, rejectUnauthorized: false },
+          },
+          logging: false,
+        }),
+};
+TATUS_VIEW,
   ALWAYS_ONLINE,
   PM_BLOCK,
   PMB,
